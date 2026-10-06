@@ -1,0 +1,27 @@
+{
+  "name": "samar-md-remastered",
+  "version": "6.1.0",
+  "private": true,
+  "description": "SAMAR-MD Remastered - stable multi-session WhatsApp bot and control website",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "check": "node --check server.js && node --check mongo-store.js && node --check commands.js && node --check public/app.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@hapi/boom": "^10.0.1",
+    "@whiskeysockets/baileys": "^6.7.18",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "pino": "^9.6.0",
+    "wa-sticker-formatter": "^4.4.4",
+    "yt-dlp-exec": "^1.0.2",
+    "@ffmpeg-installer/ffmpeg": "^1.1.0",
+    "mongodb": "^6.20.0"
+  }
+}
